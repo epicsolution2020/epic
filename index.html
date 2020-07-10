@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <title>EPIC Solution</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav bar section -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg text-light fixed-top">
+                <a class="navbar-brand text-white font-weight-bold" href="#">&nbspEPIC</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" onclick="goto('#')" type="button">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" type="button" onclick="goto('#about-us')">About Us <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" type="button" onclick="goto('#services')">Services <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav ">
+                        <li class="nav-item active">
+                            <a class="nav-link text-light " href="mailto:epic_solution@outlook.com">Contact Us <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                    </div>
+
+            </nav>
+        </div>
+        <!-- Main logo section -->
+        <div class="row content section">
+            <div class="col col-lg-12 text-center">
+                <h1 class="head-1"> <img id="" class="logo" src="./img/logo-2.png" alt=""> <br>EPIC SOLUTION</h1>
+                <p class="text-white caption">The smart IT choice.</p>
+                <hr class="text-white" id="about-us">
+            </div>
+        </div>
+        <!-- About us section -->
+        <div class="row  section" >
+            <div class="col col-lg-6 col-sm-12">
+                <h2 class="head-2 text-center text-light about-us ">About Us</h2>
+                <p class="text-light abt-txt">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEpic Solution is providing custom
+                    made web development solutions with clear budget in mind. We offer affordable web development for
+                    all kind of organizations to start their digital journey. As we know the modern business model is
+                    more depend on digital technologies and it’s very crucial to be in the game. We committed to deliver
+                    the best in class products with customer needs and guide our clients to achieve what they deserve.
+                    The team behind Epic knows the requirement for each clients and align the total project accordingly.
+                </p>
+            </div>
+            <div class="col col-lg-6 col-sm-12">
+                <img class="abt-pic" src="./img/browsing.svg" alt="">
+            </div>
+        </div>
+        <!-- Menu buttons -->
+        <div class="container section">
+            <div class="row" id="services">
+                <div class="col">
+                    <h2 class="head-2 text-center text-light">Services</h2>
+                </div>
+                <div class="card-group">
+                    <div class="card text-center text-light">
+                        <i class="fab fa-connectdevelop "></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text text-secondary">We offer the web development services in a minimal budget with modern web technologies to achieve client goals..</p>
+                            <button type="button" class="btn btn-outline-light text-center">Know More</button>
+                        </div>
+                    </div>
+                    <div class="card text-center text-light">
+                        <i class="fab fa-hubspot "></i>
+                        <div class="card-body">
+                            <h5 class="card-title">iOT Solution</h5>
+                            <p class="card-text text-secondary">iOT is an emerging technology and it can transform any business to ‘Smart’. Epic offer custom iOT development for clients.</p>
+                            <button type="button" class="btn btn-outline-light text-center">Know More</button>
+                        </div>
+                    </div>
+                    <div class="card text-center text-light">
+                        <i class="fas fa-people-arrows"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">IT Consult</h5>
+                            <p class="card-text text-secondary">We consult growing customers to reach their IT needs by integrating modern technologies to their existing business model.</p>
+                            <button type="button" class="btn btn-outline-light text-center">Know More</button>
+                        </div>
+                    </div>
+                    <div class="card text-center text-light">
+                        <i class="fas fa-code "></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Software Development</h5>
+                            <p class="card-text text-secondary">We offer custom software development service for organizations need special requirement and working environment. </p>
+                            <button type="button" class="btn btn-outline-light text-center">Know More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facebook button start here -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="1173230376214026" theme_color="#7646ff"
+        logged_in_greeting="Hi! How can we help you for web development or IT needs ?"
+        logged_out_greeting="Hi! How can we help you for web development or IT needs ?">
+    </div>
+    <!-- ==================fb ends===================== -->
+    <script src="./action.js"></script>
+    <script src="https://kit.fontawesome.com/541491b668.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
