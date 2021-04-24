@@ -80,3 +80,14 @@ i{
     width: 50%;
     margin-left: 125px;
 }
+.contact-form{
+  text-align: center;
+  margin-top: 10px;
+}
+.contact_form{
+  margin-left: auto;
+}
+a { color: inherit; } 
+span{
+  font-size: smaller;
+}
